@@ -18,8 +18,6 @@ const MovieDetail = async ({ params }) => {
 
     const main_data = data[0].details
 
-    console.log(main_data.genres)
-
   return (
     <>
       <div className='container text-white bg_gradient max-w-[1470px] flex flex-col items-center'>

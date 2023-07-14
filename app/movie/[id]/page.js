@@ -1,15 +1,9 @@
 import Image from 'next/image';
 import React from 'react'
-import { notFound } from 'next/navigation'
 
 const MovieDetail = async ({ params }) => {
 
     const id = params.id;
-
-    if(typeof id !== Number ){
-      notFound()
-    }
-
     const url = `https://netflix54.p.rapidapi.com/title/details/?ids=${id}&lang=en`
     const options = {
         method: 'GET',

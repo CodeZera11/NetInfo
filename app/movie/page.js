@@ -3,7 +3,7 @@ import React from 'react'
 
 const movie = async () => {
 
-  const url = `${process.env.RAPID_URL}`
+  const url = process.env.RAPID_URL
 
   const options = {
     method: 'GET',
